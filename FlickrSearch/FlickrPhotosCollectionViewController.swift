@@ -44,8 +44,9 @@ extension FlickrPhotosCollectionViewController: UITextFieldDelegate {
             (results, error) in
             
             
+            DispatchQueue.main.async(){
             activityIndicator.removeFromSuperview()
-            
+            }
             
             if let error = error {
                 print("Error Searching: \(error)")
@@ -55,6 +56,7 @@ extension FlickrPhotosCollectionViewController: UITextFieldDelegate {
             if let results = results {
                 print("Found \(results.searchResults.count) matching \(results.searchTerm)")
                 self.searches.insert(results, at: 0)
+               
                 self.collectionView?.reloadData()
             }
         }
@@ -78,8 +80,15 @@ extension FlickrPhotosCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.blue
+        //1
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FlickrPhotoCellCollectionViewCell
+        
+        //2
+        let flickrPhoto = photoForIndexPath(indexPath: indexPath)
+        cell.backgroundColor = UIColor.white
+        
+        //3
+        cell.imageView.image = flickrPhoto.thumbnail
         return cell
     }
 }
