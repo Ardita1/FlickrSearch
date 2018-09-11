@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E7C51FE22147C45400C10520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FE12147C45400C10520 /* AppDelegate.swift */; };
-		E7C51FE42147C45400C10520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FE32147C45400C10520 /* ViewController.swift */; };
 		E7C51FE72147C45400C10520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C51FE52147C45400C10520 /* Main.storyboard */; };
 		E7C51FE92147C45600C10520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C51FE82147C45600C10520 /* Assets.xcassets */; };
 		E7C51FEC2147C45600C10520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C51FEA2147C45600C10520 /* LaunchScreen.storyboard */; };
+		E7C51FF42147CAE300C10520 /* FlickrPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FF32147CAE300C10520 /* FlickrPhotosCollectionViewController.swift */; };
+		E7C51FF82147CD2100C10520 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FF52147CD2000C10520 /* FlickrPhoto.swift */; };
+		E7C51FF92147CD2100C10520 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FF62147CD2000C10520 /* FlickrSearchResults.swift */; };
+		E7C51FFA2147CD2100C10520 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C51FF72147CD2000C10520 /* Flickr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7C51FDE2147C45400C10520 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C51FE12147C45400C10520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7C51FE32147C45400C10520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7C51FE62147C45400C10520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7C51FE82147C45600C10520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7C51FEB2147C45600C10520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7C51FED2147C45600C10520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C51FF32147CAE300C10520 /* FlickrPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		E7C51FF52147CD2000C10520 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhoto.swift; path = ../../../Downloads/FlickrFiles/FlickrPhoto.swift; sourceTree = "<group>"; };
+		E7C51FF62147CD2000C10520 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrSearchResults.swift; path = ../../../Downloads/FlickrFiles/FlickrSearchResults.swift; sourceTree = "<group>"; };
+		E7C51FF72147CD2000C10520 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flickr.swift; path = ../../../Downloads/FlickrFiles/Flickr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				E7C51FE12147C45400C10520 /* AppDelegate.swift */,
-				E7C51FE32147C45400C10520 /* ViewController.swift */,
 				E7C51FE52147C45400C10520 /* Main.storyboard */,
 				E7C51FE82147C45600C10520 /* Assets.xcassets */,
 				E7C51FEA2147C45600C10520 /* LaunchScreen.storyboard */,
 				E7C51FED2147C45600C10520 /* Info.plist */,
+				E7C51FF32147CAE300C10520 /* FlickrPhotosCollectionViewController.swift */,
+				E7C51FF72147CD2000C10520 /* Flickr.swift */,
+				E7C51FF52147CD2000C10520 /* FlickrPhoto.swift */,
+				E7C51FF62147CD2000C10520 /* FlickrSearchResults.swift */,
 			);
 			path = FlickrSearch;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C51FE42147C45400C10520 /* ViewController.swift in Sources */,
+				E7C51FF42147CAE300C10520 /* FlickrPhotosCollectionViewController.swift in Sources */,
+				E7C51FF82147CD2100C10520 /* FlickrPhoto.swift in Sources */,
+				E7C51FFA2147CD2100C10520 /* Flickr.swift in Sources */,
 				E7C51FE22147C45400C10520 /* AppDelegate.swift in Sources */,
+				E7C51FF92147CD2100C10520 /* FlickrSearchResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +293,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79NDL56TAY;
 				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,7 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ardita.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -298,7 +312,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79NDL56TAY;
 				INFOPLIST_FILE = FlickrSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ardita.FlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
